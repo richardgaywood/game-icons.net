@@ -42,7 +42,7 @@ for SVG in $(fdfind . "$OUT_ROOT_DIR" --extension svg); do
       $PNG \
         \( +clone \
           -alpha extract \
-          -blur 0x10 \
+          -blur 0x7 \
           -level 0,50% \
           -background "$GLOW" \
           -alpha Shape \

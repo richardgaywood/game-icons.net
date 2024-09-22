@@ -34,7 +34,7 @@ fi
 begins_with() { case $2 in "$1"*) true;; *) false;; esac; }
 
 i=0
-for SVG in $(fd --extension svg); do
+for SVG in $(fdfind --extension svg); do
   AUTHOR="$(dirname "$SVG")"
 
   # ignore SVGs previously generated
